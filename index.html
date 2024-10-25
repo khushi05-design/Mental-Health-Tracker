@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissify</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    
+
+    <style>
+        a:link{
+            color:white;
+        }
+        a:visited{
+             color:Blue;
+             background-color: green;       
+        }
+        a:hover{
+            color: palevioletred;
+            background-color: whitesmoke;
+            /* transition: background-color 0.9s ease; */
+        }
+        a:active{
+            color:blue;
+            background-color: green;
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: gray;
+            padding: 0px;
+            margin:0px;
+            overflow:hidden;
+
+        }
+        .navbar a{
+        text-decoration: none;      
+         padding:15px;
+         display: block;
+         text-align: center;  
+    }
+        .navbar{ 
+            border-top-left-radius: 10px; 
+        }
+        .navbar li{
+            float: left;
+        }
+       
+        body{
+            margin: 0;
+            padding:0;
+        }
+        #a1{
+            border-top-left-radius: 5px;
+        }
+        .font3 {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: black;
+        }
+        .font7 {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            color: black;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height to center vertically */
+            text-align: center; /* To center text inside the div */
+            font-family: 'Poppins', sans-serif;
+        }
+                    .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* The scrolling wrapper */
+        .marquee-content {
+            display: flex;
+            animation: marquee 15s linear infinite; /* 15s scroll time, looped */
+        }
+
+        /* Individual image containers */
+        .image-container {
+            text-align: center;
+            margin: 0 20px; /* Space between images */
+        }
+
+        /* Image styling */
+        .image-container img {
+            display: block;
+            margin: 0 auto;
+            height: 500px;
+            width: 400px;
+        }
+
+        /* Text styling */
+        .image-container p {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+        .about{
+            
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+.about-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    transition: transform 0.3s;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    color: #495057;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #343a40;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    color: #495057;
+}
+
+li {
+    padding: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+#ssm{
+    border: 2px solid black;
+    height: auto;
+    width: auto;
+}
+
+   
+
+}
+
+        /* Keyframes for scrolling effect */
+        @keyframes marquee {
+            0% { transform: translateX(100%); } /* Start from the right */
+            100% { transform: translateX(-100%); } /* Move to the left */
+                  
+    </style>
+</head>
+<body>
+     <script>
+        function big_image(x)
+        {
+            x.style.width="400px";
+            x.style.height="600px";
+        }
+        function small_image(x)
+        {
+            x.style.width="130px";
+            x.style.height="130px";
+        }
+    </script>
+    <header>
+        <div class="logo">
+            <img src="images/LOGO.png" alt="Blissify Logo" onmouseover="big_image(this)" onmouseout="small_image(this)">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">signup</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+               
+            </ul>
+        </nav>
+        
+    
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Blissify</h1>
+            <p>Your journey to a happier life starts here!</p>
+            <a href="start.html"><button>Get Started</button></a>
+        </section>
+        <img src="images/tree.png"  >
+
+        <div class="features">
+            <h2>Featured In</h2>
+            <p>Discover tools and techniques to improve your mental health.</p>
+            <p><i>THE NEW YORK TIMES</i></p>
+            <p class="font3"><strong>FORBES</strong></p>
+            <p class="font7"><strong>THE NEW YORKER</strong></p>
+            <img src="images/lab.png">
+        </div>      
+        
+        </section>
+        <div class="testimonial-section">
+        
+            <h2>What Our Customers Say</h2>
+            <img src="images/customer1.jpg" alt="Jane Doe" class="testimonial-img">
+            <div class="testimonial">
+                <b> " I HAVE LEARNED TO REFRAME MY NEGATIVE THOUGHTS"</b> <BR> <br>
+                <p>"Stress? Bring it on! blissify gave me the the tools to I need to keep handle on my work stress. I've learned to reframe my negative thoughts.</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <img src="images/customer2.jpg" alt="John Dove" class="testimonial-img">
+            <div class="testimonial">
+                <b>"PEOPLE HAVE NOTICED I'M MORE POSITIVE , LESS STRESSED OUT" </b>
+                <p>The improvement in my life is pretty extreme. My negative bias was extremely powerfull but Blissify has made a huge difference in my life.  </p>
+                <h4>- John Dove</h4>
+            </div>
+            <img src="images/customer3.jpg" alt="Kristein william" class="testimonial-img">
+            <div class="testimonial">
+                <b> "BLISSIFY HELP TO CHANGE MY OUTLOOK"</b>
+                <p>"The biggest thing i've ever learned is how to change my outlook, especially when it comes to stressfull experiences. when i statred, I am a total pessimist but now i've learned to look for good things in negstive situations.  </p>
+                <h4>- Kristien william </h4>
+            </div>
+        </div>
+       <div style="text-align:center">
+        <img src="images/well.png">
+        </div>
+        <div style="text-align:center">
+        <h2 style="color:lightgrey;">These results come directly from people who are experiencing<br>the same issues as you. Complete a few activities each week to start seeing meaningful<br> improvement in your life satisfaction and your ability to fight back against negativity. Millions of blessify members have experienced this shift. So can you.</h2>
+       </div>
+        <div style="text-align: center">
+       <h1 > The Science</h1>
+        <p>The most important findings from the latest research on positive psychology, CBT, and mindfulness. All in one place, for the first time.</p>
+        </div>
+        <div class="marquee-container">
+    <div class="marquee-content">
+        <div class="image-container" >
+            <div style="border:2px solid black; padding:20px; background-color:whitesmoke; margin:10px; border-radius:20px;">
+                <img src="images/mountain.jpg" alt="Mountain">
+                <p id="ssm" ">What is Happiness Anyway?<br> what is happiness-and what is it not? <br>people have agonized over this question for centuries,but only recently <br>has science begun to weigh in on the debateThe old adage,If you go back to eating and<br> exercising the way you used to, your weight<br> will return to where it started. So it goes, too, with happiness. </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <div style="border:2px solid black; padding:20px; background-color:blanchedalmond ;margin:10px; border-radius:20px;">
+                <img src="images/molecule.jpg" alt="Molecule">
+                <p>The Science Happiness<br>This field focuses on strengths, virtues, and <br>factors that contribute to a fulfilling life. <br>Researchers like Martin Seligman emphasize the importance of positive <br> emotions, engagement, relationships, meaning</p>
+            </div>
+        </div>   
+        <div class="image-container">
+            <div style="border:2px solid black; padding:20px; background-color:beige ; margin:10px; border-radius:20px;">
+            <img src="images/sea.jpg" alt="Sea">
+            <p>Skill For Well-being <br> The ability to recognize, understand, and manage your own <br>emotions and those of others is crucial for healthy relationships<br> and personal well-being.Effective communication fosters stronger relationships.</p>
+        </div>
+        </div>
+</div>
+
+            
+    </main>
+   
+
+    <footer>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2018 Blissify. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </footer>
+        
+        <style>
+            footer {
+                background-color: lightskyblue;
+                color: #fff;
+                padding: 40px 20px;
+                text-align: center;
+                position: relative;
+            }
+            .footer-content {
+                margin-bottom: 20px;
+            }
+            .footer-links {
+                list-style: none;
+                padding: 0;
+                margin: 10px 0;
+            }
+            .footer-links li {
+                display: inline;
+                margin: 0 15px;
+            }
+            .footer-links a {
+                color: blanchedalmond;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer-links a:hover {
+                color: #ffcc00;
+            }
+            .social-media {
+                margin-top: 10px;
+            }
+            .social-media a {
+                margin: 0 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                transition: transform 0.3s;
+            }
+            .social-media a:hover {
+                transform: scale(1.2);
+            }
+            @media (max-width: 600px) {
+                .footer-links li {
+                    display: block;
+                    margin: 5px 0;
+                }
+            }
+        </style>
+        
+        <!-- <p>&copy; 2019 Blissify. All rights reserved.</p> -->
+    </footer>
+</body>
+</html>

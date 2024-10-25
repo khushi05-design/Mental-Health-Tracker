@@ -1,0 +1,77 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Tracker</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        .button {
+    
+    background-color: #4a90e2; /* Main button color */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+
+}
+        .button:hover {
+    background-color: #357ab8; /* Darker shade on hover */
+}
+
+#journal-history, #mood-history {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around history sections */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for history */
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(74, 144, 226, 0.8); /* Semi-transparent footer */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+.response-message {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="container">
+    <section id="mood" class="card">
+        <h2>Track Your Mood</h2>
+        <p>Rate your mood:</p>
+        <input type="range" min="1" max="10" value="5" id="mood-slider">
+        <label for="mood-slider">Mood: <span id="mood-value">5</span></label>
+        <button class="button" onclick="saveMood()">Save Mood</button>
+        <div id="mood-history"></div>
+    </section>

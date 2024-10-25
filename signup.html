@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        function data(){
+            var a=document.getElementById("username").value;
+            var b =document.getElementById("number").value;
+            var d=document.getElementById("confirmpassword").value;
+            var c=document.getElementById("password").value;
+           
+            //empty field show error
+            if(a==""||b==""||c==""||d==""){
+                alert("All fields are mandatory");
+                return false;
+            }
+            else if(b.length<10||b.length>10){
+                alert("Number should be of 10 digit! Please enter valid number");
+                return false;
+            }
+            else if(isNaN(b)){
+                alert("Only Numbers are allowed! Please enter valid number");
+                return false;
+            }
+            else if (c!=d){
+                alert("Please enter same password");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+    </script>
+     <form onsubmit=" return data()" action="code10.html">
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmpassword">confirmPassword:</label>
+                <input type="password" id="confirmpassword" required>
+            </div>
+            <div class="input-group">
+                <label for="number">number</label>
+                <input type="number" id="number" required>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    
+    </form>
+</body>
+</html>
